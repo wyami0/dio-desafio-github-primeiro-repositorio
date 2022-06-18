@@ -48,6 +48,21 @@
             height: 50px;
             line-height: 50px;
         }
+
+        .caixa-maior {
+            display: flex;
+            background-color: salmon;
+            border: 2px solid rgb(240, 165, 156);
+            border-radius: 5%;
+            height: 200px;
+            width: 500px;
+            flex-direction: column;
+            flex-wrap: wrap
+        }
+
+        .conteudo {
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -111,6 +126,16 @@
         <div class="item">5</div>
         <div class="item">6</div>
         <div class="item">7</div>
+    </div>
+
+    <div class="caixa-maior">
+        <div class="conteudo"><h1>Minhas versões pessoais!</h1></div>
+        <div class="conteudo">Essa é uma demonstração</div>
+        <div class="conteudo">De como as colunas funcionam</div>
+        <div class="conteudo">Mesmo quando colocadas</div>
+        <div class="conteudo">Uma sobre a outra</div>
+        <div class="conteudo">Alinhadas em row</div>
+        <div class="conteudo">E limitadas ao "wrap"</div>
     </div>
 </body>
 </html>
