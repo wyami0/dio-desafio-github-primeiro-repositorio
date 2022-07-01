@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-self</title>
+
+    <style>
+        .flex-container {
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        .align-container {
+            align-items: center;
+        }
+        .item {
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .start {
+            align-self: flex-start
+        }
+
+        .end {
+            align-self: flex-end;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .auto {
+            align-self: auto;
+        }
+
+        .direction {
+            flex-direction: column;
+        }
+
+        .meuexercicio {
+            background-color: rgb(240, 240, 84);
+            border: 1px solid rgb(255, 212, 72);
+            display: flex;
+            max-width: 500px;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 500px;
+            height: auto;
+        }
+
+        .msgdir {
+            align-self: flex-end;
+            font-size: small;
+            text-align: end;
+            background-color: rgb(192, 250, 106);
+            border-radius: 30px;
+            border: 1px;
+            color: black;
+            width: auto;
+            margin-bottom: 7px;
+        }
+
+        .msgesq {
+            align-self: flex-start;
+            font-size: small;
+            text-align: justify;
+            background-color: white;
+            border-radius: 30px;
+            border-radius: 1px solid;
+            color: black;
+            width: auto;
+            margin-bottom: 7px;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <section class="flex-container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item auto">ITEM 4</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item end">ITEM 4</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item start">AAAaaaaaaaaaa</div>
+        <div class="item end">AAAaaaaaaaaaaaaaaaaa</div>
+        <div class="item stretch">Lorem Ipsum is therefore always free from repetition</div>
+    </section>
+
+    <h1>column</h1>
+    <section class="flex-container align-container direction">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item auto">ITEM 4</div>
+    </section>
+
+    <section class="flex-container direction">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item end">ITEM 4</div>
+    </section>
+
+    <section class="flex-container direction">
+        <div class="item center">AAA</div>
+        <div class="item start">AAAaaaaaaaaaa</div>
+        <div class="item end">AAAaaaaaaaaaaaaaaaaa</div>
+        <div class="item stretch">Lorem Ipsum is therefore always free from repetition</div>
+    </section>
+
+    <h1>Meu exercício</h1>
+    <section class="meuexercicio">
+        <div class="msgdir">Ei! :)</div>
+        <div class="msgdir">Você ficou sabendo? </div>
+        <div class="msgdir">A DIO está disponibilzando um Bootcamp!</div>
+        <div class="msgesq">Mesmo?</div>
+        <div class="msgesq">Temos que aproveitar!</div>
+    </section>
+</body>
+</html>
